@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:white;
+        }
+
+
+        header {
+    background: linear-gradient(to right,rgb(6, 185, 6),rgb(53, 144, 53));
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+       
+        .container {
+            display: flex;
+            flex-direction: row;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .sidebar {
+            width: 25%;
+            padding: 20px;
+            background-color: #f4f4f4;
+            
+            
+        }
+
+        .sidebar h2 {
+            font-size: 1.5em;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color: blue;
+        }
+
+        .content {
+            width: 75%;
+            padding: 20px;
+        }
+
+        h1 {
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
+        }
+
+        article {
+            margin-bottom: 30px;
+        }
+
+        .scalable-image {
+            width: 20%; 
+            height: auto;
+        }
+
+        @media (max-width: 1024px) {
+            .container {
+                flex-direction: column; 
+            }
+
+            .sidebar, .content {
+                width: 100%;
+            }
+        }
+
+
+
+        footer {
+    background: linear-gradient(to right,rgb(6, 185, 6),rgb(53, 144, 53));
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    clear: both;
+}
+
+.footer-content {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px;
+}
+
+.footer-links, .footer-social {
+    margin: 10px 0;
+}
+
+.footer-links h3, .footer-social h3 {
+    margin: 10px 0 5px;
+}
+
+.footer-links a, .footer-social a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover, .footer-social a:hover {
+    text-decoration: underline;
+}
+
+.footer-social ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-social ul li {
+    display: inline;
+    margin: 0 10px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Restaurant</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Menu.html">Menu</a></li>
+                <li><a href="About Us.html">About Us</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Menu Categories</h2>
+            <ul>
+                <li><a href="#appetizers">Appetizers</a></li>
+                <li><a href="#main-courses">Main Courses</a></li>
+                <li><a href="#desserts">Desserts</a></li>
+                <li><a href="#drinks">Drinks</a></li>
+            </ul>
+        </aside>
+        <main class="content">
+            <section id="appetizers">
+                <h1>Appetizers</h1>
+                <article>
+                    <figure>
+                        <img src="images/Bruschetta.jpeg" alt="Bruschetta" class="scalable-image" width="50" height="50">
+                        <figcaption>Bruschetta - $8</figcaption>
+                    </figure>
+                    <p>Fresh tomatoes, basil, and mozzarella on toasted bread.</p>
+                </article>
+                <article>
+                    <figure>
+                        <img src="images/Stuffed Mushrooms.jpeg" alt="Stuffed Mushrooms" class="scalable-image">
+                        <figcaption>Stuffed Mushrooms - $10</figcaption>
+                    </figure>
+                    <p>Mushrooms stuffed with cream cheese and herbs.</p>
+                </article>
+            </section>
+            <section id="main-courses">
+                <h1>Main Courses</h1>
+                <article>
+                    <figure>
+                        <img src="images/Grilled Salmon.jpeg" alt="Grilled Salmon" class="scalable-image">
+                        <figcaption>Grilled Salmon - $20</figcaption>
+                    </figure>
+                    <p>Served with seasonal vegetables and lemon butter sauce.</p>
+                </article>
+                <article>
+                    <figure>
+                        <img src="images/Pasta Primavera.jpeg" alt="Pasta Primavera" class="scalable-image">
+                        <figcaption>Pasta Primavera - $15</figcaption>
+                    </figure>
+                    <p>Pasta with fresh vegetables in a light garlic sauce.</p>
+                </article>
+            </section>
+            <section id="desserts">
+                <h1>Desserts</h1>
+                <article>
+                    <figure>
+                        <img src="images/Chocolate Cake.jpeg" alt="Chocolate Cake" class="scalable-image">
+                        <figcaption>Chocolate Cake - $7</figcaption>
+                    </figure>
+                    <p>Rich chocolate cake with creamy frosting.</p>
+                </article>
+            </section>
+            <section id="drinks">
+                <h1>Drinks</h1>
+                <article>
+                    <figure>
+                        <img src="images/Mojito.jpeg" alt="Mojito" class="scalable-image">
+                        <figcaption>Mojito - $10</figcaption>
+                    </figure>
+                    <p>Refreshing mint and lime cocktail.</p>
+                </article>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <div id="Contact">
+        <div class="footer-content">
+            <p>&copy; 2024 Our Restaurant &mdash; Delicious Food Awaits!</p>
+            <div class="footer-links">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:prasithkumarbca2021@gmail.com">prasithkumarbca2021@gmail.com</a></p>
+                <p>Phone: <a href="mobile:9080259722">9080259722</a></p>
+            </div>
+            
+        </div>
+        </div>
+    </footer>
+</body>
+</html>
+
